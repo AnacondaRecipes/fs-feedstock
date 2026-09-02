@@ -10,7 +10,7 @@ source:
   sha256: ae97c7d51213f4b70b6a958292530289090de3a7e15841e108fbe144f069d313
 
 build:
-  number: 0
+  number: 1
   #The following constraint on the python version is applied due to the unavailability of some dependencies. Upstream actually supports older versions.
   skip: True  # [py<36]
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir --no-build-isolation -vvv
@@ -19,7 +19,7 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
+    - setuptools <81
     - wheel
   run:
     - python
