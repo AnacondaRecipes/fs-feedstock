@@ -19,11 +19,11 @@ requirements:
   host:
     - python
     - pip
-    - setuptools <81
+    - setuptools
     - wheel
   run:
     - python
-    - setuptools
+    - setuptools <81
     - appdirs >=1.4.3,<1.5.0
     - pytz
     - six >=1.10.0,<2
